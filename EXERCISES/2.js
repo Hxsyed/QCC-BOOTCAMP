@@ -19,7 +19,7 @@ console.log(b);
 
 // CODE HERE
 function defaultGreet(name1, name2) {
-  console.log("Hi " + name1 + " " + name2 + " !");
+  console.log("Hi " + name1 + " " + name2 + "!");
 }
 
 defaultGreet("Haroon", "Syed"); // => 'Hi Chaka Khan!'
@@ -35,11 +35,11 @@ defaultGreet("Haroon", "Syed"); // => 'Hi Chaka Khan!'
 // CODE HERE
 function taxCalculator(num1, state) {
   if (state == "NY") {
-    num1 = 4;
+    num1 = 4 / 100 + 1;
   } else {
-    num1 = 6.625;
+    num1 = 6.625 / 100 + 1;
   }
-  sum = 100 + num1;
+  sum = 100 * num1;
   return sum;
 }
 var c = taxCalculator(100, "NY"); // => 104
