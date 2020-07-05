@@ -218,16 +218,31 @@ Not sure what the factorial is? Check this [link for a refresher!](http://www.ra
 */
 
 console.log("Question # 7");
+// MATHOD # 1
+// function factorial(num) {
+//   if (num === 0) {
+//     return 1;
+//   }
+//   else{
+//     return num * factorial(num - 1);
+//   }
+//   return num
+// }
 
+// METHOD # 2
 function factorial(num) {
+  var fac = 1;
+  var limit = num;
   if (num === 0) {
     return 1;
-  } else {
-    return num * factorial(num - 1);
   }
-  return num;
+  for (var i = 1; i <= limit; i++) {
+    fac = fac * num;
+    num--;
+  }
+  return fac;
 }
-var fac = factorial(3);
+var fac = factorial(6);
 console.log(fac);
 
 /* 
