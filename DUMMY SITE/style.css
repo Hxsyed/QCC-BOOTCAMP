@@ -1,0 +1,23 @@
+.one {
+  background-color: purple;
+  margin: 10px;
+}
+.two {
+  background-color: pink;
+  margin: 10px;
+}
+#para1:hover {
+  background-color: lightgreen;
+}
+.list {
+  list-style-type: none;
+}
+.three {
+  display: flex;
+  flex-direction: column;
+}
+.four {
+  width: 150vw;
+  overflow: scroll;
+  background-color: lightblue;
+}
